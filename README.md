@@ -30,4 +30,4 @@ the wetware that designed them.
 ## 🎹 After hours
 
 Retired gymnast, currently losing a slow-motion fight with a piano.
-The piano is winning. Morale remains high.
+The piano is winning. Morale remains high. :)
