@@ -12,7 +12,7 @@ the wetware that designed them.
 - Growing and studying **neurons in a dish** with the Mind in Vitro team
   (the neurons are doing their best)
 - Previously: an **EEG brain-computer interface** that let users control
-  a cycling rehab system with their thoughts; pedaling, but make it telepathic
+  a cycling rehab system with their thoughts; pedaling, but make it telepathic (why not)
 
 ## 📊 Things I've shipped
 
