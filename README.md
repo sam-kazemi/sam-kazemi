@@ -36,3 +36,8 @@ the wetware that designed them.
 
 Retired gymnast, currently losing a slow-motion fight with a piano.
 The piano is winning. Morale remains high. :)
+
+## 🤖 How this page stays updated
+
+This profile keeps itself up to date. A small bot ([Python + GitHub Actions](https://github.com/sam-kazemi/sam-kazemi/blob/main/.github/scripts/projects_bot.py)) checks my public repos every day. When it finds a new one, it opens an issue asking if I want it here, and nothing changes until I say yes.
+![Profile bot demo](https://github.com/sam-kazemi/sam-kazemi/raw/main/profile_bot_demo.gif)
