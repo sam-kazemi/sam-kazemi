@@ -1,0 +1,41 @@
+name: Project proposals
+
+on:
+  schedule:
+    - cron: "17 15 * * *"   # once a day (about 9:17 am Chicago time)
+  workflow_dispatch:         # adds a "Run workflow" button in the Actions tab
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: profile-readme
+  cancel-in-progress: false
+
+jobs:
+  propose:
+    if: github.event_name != 'issue_comment'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ask about new public repos
+        run: python3 .github/scripts/projects_bot.py propose
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # optional: AI-written suggestions
+
+  respond:
+    if: >-
+      github.event_name == 'issue_comment' &&
+      contains(github.event.issue.labels.*.name, 'project-proposal') &&
+      github.event.comment.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply your yes/no answer
+        run: python3 .github/scripts/projects_bot.py respond
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
