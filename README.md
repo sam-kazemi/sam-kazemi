@@ -17,7 +17,12 @@ the wetware that designed them.
 
 
 ## 📊 Things I've shipped
-
+<!-- PROJECTS:START -->
+- **[fmri-decoding-agent](https://github.com/sam-kazemi/fmri-decoding-agent)** —
+  an AI agent that runs fMRI decoding analyses from a plain-English question: it picks
+  the steps, calls my Python tools, and writes the report. It's not allowed to do math
+  in its head, and a checker flags any number it didn't get from a tool. On its very first
+  run it caught and fixed its own mistake 🤖
 - **[Covid-Narrative](https://github.com/sam-kazemi/Covid-Narrative)** —
   interactive D3.js slideshow of the three US COVID waves, annotated peaks,
   coordinated state-level choropleth. [Live demo →](https://sam-kazemi.github.io/Covid-Narrative/)
@@ -25,6 +30,7 @@ the wetware that designed them.
   Tableau. [Tableau Public →](https://public.tableau.com/views/WhichRegionsLedGlobalEconomicGrowthfrom2000to2020andDidRisingProsperityTranslateintoGreaterSchoolEnrollment/WhichRegionsLedGlobalEconomicGrowthfrom2000to2020andDidRisingProsperityTranslateintoGreaterSchoolEnrollment?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 - **Yelp rating predictor** — hybrid LightGBM + Matrix Factorization model
 - Way back: an Android app that turned any phone camera into a secure IP camera, before connecting your phone to your laptop was a one-click thing lol
+<!-- PROJECTS:END -->
 
 ## 🛠️ Toolbox
 
